@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginVertical="4dp"
+    app:contentPadding="4dp"
+    android:id="@+id/cardItem">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvTask"
+            android:text="Electricity bill"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginLeft="16dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvDate"
+                android:layout_marginStart="12dp"
+                android:paddingStart="4dp"
+                android:gravity="center_vertical"
+                app:drawableStartCompat="@drawable/ic_baseline_date_range_24"
+                app:drawableTint="?colorPrimary"
+                android:text="14-05-2021"/>
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tvDate"
+                android:text="Pending"
+                android:id="@+id/switchMaterial"
+                android:textColor="?colorPrimary"
+                android:textStyle="bold"
+                android:layout_marginStart="16dp"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</com.google.android.material.card.MaterialCardView>
